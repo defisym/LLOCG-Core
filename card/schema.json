@@ -1,0 +1,159 @@
+{
+	"title": "JSON schema for card configuration files",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"definitions": {
+		"color": {
+			"type": "string",
+			"enum": ["Pink", "Red", "Yellow", "Green", "Blue", "Purple", "Any", "All"]
+			},
+		"heart":{
+			"type":"object",
+			"description": "heart",
+			"required": [
+				"count",
+				"color"							
+			],
+			"properties": {
+				"count":{
+					"type": "integer",
+					"description": "heart count"
+				},
+				"color":{
+					"$ref": "#/definitions/color"
+				}
+			}
+		},
+		"heart array":{
+			"type": "array",
+			"description": "heart array",
+			"items": {
+				"$ref": "#/definitions/heart"
+			}
+		}
+	},
+
+	"type": "object",
+	"description": "card configuration file",
+	"required": [
+		"card"
+	],
+	"properties": {
+		"card":{
+			"type": "array",
+			"description": "card configuration array",
+			"items": {
+				"type": "object",
+				"description": "card configuration",
+				"required": [
+					"type"
+				],
+				"if":{ "properties": { "type":{ "const": "Member" } } },
+				"then": {"required": ["name","group","unit","cost","blade heart","blade","heart","effect","illustrate","extra info"]},
+				"else": {
+					"if":{ "properties": { "type":{ "const": "Live" } } },
+					"then": {"required": ["name","group","unit","blade heart","score","live requirement","effect","illustrate","extra info"]},
+					"else": {
+						"if":{ "properties": { "type":{ "const": "Energy" } } },
+						"then": {"required": ["group","illustrate","extra info"]}
+					}
+				},
+
+				"properties": {
+					"package":{
+						"type": "string",
+						"description": "card package"
+					},
+					"rarity":{
+						"type": "string",
+						"description": "card rarity"
+					},
+					"type":{
+						"type":"string",
+						"description": "card type",
+						"enum": ["Member","Live","Energy"]
+					},
+					"name": {
+						"type": "string",
+						"description": "card name"
+					},
+					"group":{
+						"type": "string",
+						"description": "card group",
+						"enum": ["μ's","Aqours","Nijigasaki","Liella","Hasunosora"]
+					},
+					"unit":{
+						"type": "string",
+						"description": "card unit",
+						"enum": [
+							"BiBi","Printemps","Lily white",
+							"Guilty Kiss","CYaRon!","AZALEA",
+							"A·ZU·NA","QU4RTZ","R3BIRTH","DiverDiva",
+							"CatChu!","KALEIDOSCORE","5yncri5e!",
+							"Cerise Bouquet","DOLLCHESTRA","Mira-Cra Park!",
+							"YYY","AiScReam"
+						]
+					},
+					"cost":{
+						"type": "integer",
+						"description": "card cost"
+					},
+					"blade heart":{
+						"$ref": "#/definitions/heart array"
+					},
+					"blade":{
+						"type": "integer",
+						"description": "blade count"
+					},
+					"heart":{
+						"$ref": "#/definitions/heart array"
+					},
+					"score":{
+						"type": "integer",
+						"description": "live score"
+					},
+					"live requirement":{
+						"$ref": "#/definitions/heart array"
+					},
+					"effect":{
+						"type":"array",
+						"description": "card effect",
+						"items": {
+							"type": "object",
+							"description": "effect",
+							"properties": {
+								"text":{
+									"type": "string",
+									"description": "effect text"
+								},
+								"time point":{
+									"type":"string",
+									"description": "time point",
+									"enum": ["Start","Middle","End"]
+								},
+								"type":{
+									"type":"string",
+									"description": "effect type",
+									"enum": ["Activated","Automatic","Constant"]
+								},
+								"keyword":{
+									"type":"string",
+									"description": "effect keyword",
+									"enum": ["Once per turn","Debut","Live start", "Live success"]
+								},
+								"cost":{}
+							}
+						}
+					},
+					"illustrate":{
+						"type": "string",
+						"description": "illustrate filename"
+					},
+					"extra info":{
+						"type": "string",
+						"description": "extra info"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,44 @@
+{
+	"title": "card info",
+	"$schema": "./schema.json",
+	"card": [
+		{
+			"package": "ブースターパック vol.1",
+			"rarity": "P+",
+			"type": "Member",
+			"name": "桜坂しずく",
+			"group":"Nijigasaki",
+			"unit": "A·ZU·NA",
+			"cost": 10,
+			"blade heart": [
+				{
+					"color": "Blue",
+					"count": 1
+				}
+			],
+			"blade": 2,
+			"heart": [
+				{
+					"color": "Green",
+					"count": 1
+				},
+				{
+					"color": "Blue",
+					"count": 3
+				}
+			],
+			"effect": [
+				{
+					"keyword": "Debut",
+					"text": "手札を1枚控え室に置いてもよい：自分の控え室から『虹ヶ咲』のライブカードを1枚手札に加える。"
+				},
+				{
+					"keyword": "Live start",
+					"text": "支払ってもよい：好きなハートの色を1つ指定する。ライブ終了時まで、そのハートを1つ得る。"
+				}
+			],
+			"illustrate": "",
+			"extra info": "PL!N-bp1-003-P＋"
+		}
+	]
+}
