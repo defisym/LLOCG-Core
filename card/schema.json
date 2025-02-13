@@ -4,7 +4,7 @@
 	"definitions": {
 		"color": {
 			"type": "string",
-			"enum": ["Pink", "Red", "Yellow", "Green", "Blue", "Purple", "Any", "All"]
+			"enum": ["Pink", "Red", "Yellow", "Green", "Blue", "Purple", "Any", "All", "Extra"]
 			},
 		"heart":{
 			"type":"object",
