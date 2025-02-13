@@ -1,0 +1,3 @@
+[submodule "core/src/Dependents/nlohmann"]
+	path = core/src/Dependents/nlohmann
+	url = https://github.com/nlohmann/json.git
