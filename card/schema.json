@@ -75,7 +75,22 @@
 					},
 					"rarity":{
 						"type": "string",
-						"description": "card rarity"
+						"description": "card rarity",
+						"enum": [
+							"SD",
+							"N",
+							"R",
+							"R+",
+							"P",
+							"P+",
+							"PE",
+							"PE+",
+							"L",
+							"LLE",
+							"SEC",
+							"SEC+",
+							"SECE",
+							"PR"]
 					},
 					"type":{
 						"type":"string",
