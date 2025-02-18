@@ -39,6 +39,51 @@
 			],
 			"illustrate": "",
 			"extra info": "PL!N-bp1-003-P＋"
+		},
+		{
+			"package": "ブースターパック vol.1",
+			"rarity": "L",
+			"type": "Live",
+			"name": "Solitude Rain",
+			"group":"Nijigasaki",
+			"unit":"Solo",
+			"blade heart": [
+				{
+					"color": "Blue",
+					"count": 1
+				},
+				{
+					"color": "Extra",
+					"count": 1
+				}
+			],
+			"score":0,
+			"live requirement": [
+				{
+					"color": "Blue",
+					"count": 5
+				},
+				{
+					"color": "Any",
+					"count": 7
+				}
+			],
+			"effect":[
+				{
+					"text": "自分のステージにいる『虹ヶ咲』のメンバーが持つP、G、B、R、Y、Pのうち1色につき、このカードのスコアを＋１する。"
+				}
+			],
+			"illustrate": "",
+			"extra info": "PL!N-bp1-027-L"			
+		},
+		{
+			"package": "ブースターパック vol.1",
+			"rarity": "LLE",
+			"type": "Energy",
+			"group":"Nijigasaki",
+			"unit": "A·ZU·NA",
+			"illustrate": "",
+			"extra info": "PL!N-bp1-000-LLE"
 		}
 	]
 }
