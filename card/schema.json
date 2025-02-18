@@ -64,7 +64,7 @@
 					"then": {"required": ["name","group","unit","blade heart","score","live requirement","effect","illustrate","extra info"]},
 					"else": {
 						"if":{ "properties": { "type":{ "const": "Energy" } } },
-						"then": {"required": ["group","illustrate","extra info"]}
+						"then": {"required": ["group","unit","illustrate","extra info"]}
 					}
 				},
 
