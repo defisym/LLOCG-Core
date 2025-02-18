@@ -32,4 +32,7 @@ enum class Unit :std::uint8_t {
     // Mixed
     Mixed_YYY,
     Mixed_AiScReam,
+
+    // Solo
+    Solo,
 };
