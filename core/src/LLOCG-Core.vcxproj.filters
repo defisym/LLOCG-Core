@@ -16,15 +16,51 @@
     <Filter Include="头文件\Interface">
       <UniqueIdentifier>{5dc039b9-37c2-4659-a087-10e4eee9a548}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Version">
+      <UniqueIdentifier>{d6fa7e00-1a47-43ba-9a7f-04efd0115e37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Utilities">
+      <UniqueIdentifier>{045264cb-a943-4588-b919-540e685c97bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Utilities">
+      <UniqueIdentifier>{892a5be4-7441-4921-ac80-6be863e9b17c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Version">
+      <UniqueIdentifier>{fe15659c-e993-4cbb-b1db-3c92c0545454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Definition">
+      <UniqueIdentifier>{8778f776-6314-4a2a-84de-173e2c88ed65}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LLOCG-Core.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Version\Version.cpp">
+      <Filter>源文件\Version</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Interface\Interface.h">
       <Filter>头文件\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Version\Version.h">
+      <Filter>头文件\Version</Filter>
+    </ClInclude>
+    <ClInclude Include="Definition\Color.h">
+      <Filter>头文件\Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="Definition\Group.h">
+      <Filter>头文件\Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="Definition\Unit.h">
+      <Filter>头文件\Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="Definition\Field.h">
+      <Filter>头文件\Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="Definition\Phase.h">
+      <Filter>头文件\Definition</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

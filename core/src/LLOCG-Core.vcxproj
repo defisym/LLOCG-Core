@@ -302,9 +302,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="LLOCG-Core.cpp" />
+    <ClCompile Include="Version\Version.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Definition\Color.h" />
+    <ClInclude Include="Definition\Field.h" />
+    <ClInclude Include="Definition\Group.h" />
+    <ClInclude Include="Definition\Phase.h" />
+    <ClInclude Include="Definition\Unit.h" />
     <ClInclude Include="Interface\Interface.h" />
+    <ClInclude Include="Version\Version.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
