@@ -29,6 +29,16 @@
 			"items": {
 				"$ref": "#/definitions/heart"
 			}
+		},
+		"filed":{
+			"type": "string",
+			"description": "filed",
+			"enum": ["Stage", "Live", "Energy","Success", "Greenroom", "Solution", "Hand", "MainDeck", "EnergyDeck", "Banished"]
+		},
+		"phase":{
+			"type": "string",
+			"description": "phase",
+			"enum": ["Active", "Energy", "Draw","Main", "Live"]
 		}
 	},
 
