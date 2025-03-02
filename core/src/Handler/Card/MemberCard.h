@@ -2,6 +2,7 @@
 
 #include "CardBase.h"
 
-class MemberCard :CardBase {
+class MemberCard :public CardBase {
+public:
     MemberCard(const JsonData& data) :CardBase(data) {}
 };
