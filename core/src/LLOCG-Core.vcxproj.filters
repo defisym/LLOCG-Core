@@ -31,6 +31,30 @@
     <Filter Include="头文件\Definition">
       <UniqueIdentifier>{8778f776-6314-4a2a-84de-173e2c88ed65}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Handler">
+      <UniqueIdentifier>{52c9935d-03ac-4422-9674-45c5b78d17dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Handler">
+      <UniqueIdentifier>{a896afd4-74b2-4935-a93c-a918e4ba4c62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Handler\Card">
+      <UniqueIdentifier>{73ed2c39-3639-4db5-9163-4830d838c03d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Handler\Card">
+      <UniqueIdentifier>{2c1a5c30-f6a9-4422-89cf-afd7417070eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Handler\Game">
+      <UniqueIdentifier>{29eec0b9-d4b6-4d0f-81c5-f3e40a873b95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Handler\Game">
+      <UniqueIdentifier>{ae955ce5-d212-4925-b545-f4ff97858209}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Handler\Deck">
+      <UniqueIdentifier>{b48c8c8c-de3e-4474-a8f8-2419a9aaa4a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Handler\Deck">
+      <UniqueIdentifier>{895bd2a1-70fd-475b-bd12-6a200561d425}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LLOCG-Core.cpp">
@@ -38,6 +62,9 @@
     </ClCompile>
     <ClCompile Include="Version\Version.cpp">
       <Filter>源文件\Version</Filter>
+    </ClCompile>
+    <ClCompile Include="Handler\Card\CardBase.cpp">
+      <Filter>源文件\Handler\Card</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +88,21 @@
     </ClInclude>
     <ClInclude Include="Definition\Phase.h">
       <Filter>头文件\Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="Handler\Card\CardBase.h">
+      <Filter>头文件\Handler\Card</Filter>
+    </ClInclude>
+    <ClInclude Include="Handler\Card\MemberCard.h">
+      <Filter>头文件\Handler\Card</Filter>
+    </ClInclude>
+    <ClInclude Include="Handler\Card\LiveCard.h">
+      <Filter>头文件\Handler\Card</Filter>
+    </ClInclude>
+    <ClInclude Include="Handler\Card\EnergyCard.h">
+      <Filter>头文件\Handler\Card</Filter>
+    </ClInclude>
+    <ClInclude Include="Handler\Deck\Deck.h">
+      <Filter>头文件\Handler\Deck</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
