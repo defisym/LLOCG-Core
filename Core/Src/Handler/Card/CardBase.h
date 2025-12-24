@@ -3,7 +3,7 @@
 #include <cstdint>
 #include <memory>
 
-#include "Dependents/nlohmann/single_include/nlohmann/json.hpp"
+#include "3rdLib/nlohmann/single_include/nlohmann/json.hpp"
 
 enum class CardType :std::uint8_t {
     Member,

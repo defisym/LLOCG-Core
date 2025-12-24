@@ -1,3 +1,3 @@
-[submodule "core/src/Dependents/nlohmann"]
-	path = core/src/Dependents/nlohmann
+[submodule "Core/Src/3rdLib/nlohmann"]
+	path = Core/Src/3rdLib/nlohmann
 	url = https://github.com/nlohmann/json.git
