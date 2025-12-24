@@ -55,6 +55,12 @@
     <Filter Include="源文件\Handler\Deck">
       <UniqueIdentifier>{895bd2a1-70fd-475b-bd12-6a200561d425}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\LuaInterface">
+      <UniqueIdentifier>{607077b2-4578-4c86-ab80-ab2c5cd02135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\LuaInterface">
+      <UniqueIdentifier>{173c62e1-4ad6-4878-a228-4dcb381136ef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LLOCG-Core.cpp">
@@ -65,6 +71,9 @@
     </ClCompile>
     <ClCompile Include="Handler\Card\CardBase.cpp">
       <Filter>源文件\Handler\Card</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaInterface\LuaInterface.cpp">
+      <Filter>源文件\LuaInterface</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -103,6 +112,9 @@
     </ClInclude>
     <ClInclude Include="Handler\Deck\Deck.h">
       <Filter>头文件\Handler\Deck</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaInterface\LuaInterface.h">
+      <Filter>头文件\LuaInterface</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

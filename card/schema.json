@@ -166,7 +166,18 @@
 									"description": "effect keyword",
 									"enum": ["Once per turn","Debut","Live start", "Live success"]
 								},
-								"cost":{}
+								"condition":{
+									"type": "string",
+									"description": "effect condition, a lua script that returns a boolean value, true if the condition is met, keeps empty if no condition"
+								},
+								"cost":{
+									"type": "string",
+									"description": "effect cost, a lua script that returns a boolean value, true if the cost is paid, keeps empty if no cost"
+								},
+								"execute":{
+									"type": "string",
+									"description": "effect execute, a lua script that executes the effect"
+								}
 							}
 						}
 					},

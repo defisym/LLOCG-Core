@@ -311,6 +311,7 @@
   <ItemGroup>
     <ClCompile Include="Handler\Card\CardBase.cpp" />
     <ClCompile Include="LLOCG-Core.cpp" />
+    <ClCompile Include="LuaInterface\LuaInterface.cpp" />
     <ClCompile Include="Version\Version.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -325,6 +326,7 @@
     <ClInclude Include="Handler\Card\MemberCard.h" />
     <ClInclude Include="Handler\Deck\Deck.h" />
     <ClInclude Include="Interface\Interface.h" />
+    <ClInclude Include="LuaInterface\LuaInterface.h" />
     <ClInclude Include="Version\Version.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
